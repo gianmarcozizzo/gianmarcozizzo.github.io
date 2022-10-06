@@ -6,9 +6,9 @@ var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
 var countDownDate3 = new Date(CAPODANNO[1]).getTime();
 
-var Natale = document.getElementById(NATALE[0])
-var Compleanno = document.getElementById(COMPLEANNO[0])
-var Capodanno = document.getElementById(CAPODANNO[0])
+var Natale = document.getElementById("Natale")
+var Compleanno = document.getElementById("Compleanno")
+var Capodanno = document.getElementById("Capodanno")
 
 function countdown(finish_date, timer) {
 
