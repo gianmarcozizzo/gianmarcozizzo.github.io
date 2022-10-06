@@ -1,11 +1,14 @@
 var NATALE = "Dec 25, 2022 00:00:00"
 var COMPLEANNO = "Feb 7, 2023 00:00:00"
+var CAPODANNO = "Jan 1, 2023 00:00:00"
 
 var countDownDate1 = new Date(NATALE).getTime();
 var countDownDate2 = new Date(COMPLEANNO).getTime();
+var countDownDate3 = new Date(CAPODANNO).getTime();
 
 var timer1 = document.getElementById("timer1")
 var timer2 = document.getElementById("timer2")
+var timer2 = document.getElementById("timer3")
 
 function countdown(finish_date, timer) {
 
@@ -32,3 +35,4 @@ function countdown(finish_date, timer) {
 
 countdown(countDownDate1, timer1)
 countdown(countDownDate2, timer2)
+countdown(countDownDate3, timer3)
