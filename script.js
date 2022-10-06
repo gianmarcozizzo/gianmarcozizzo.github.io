@@ -8,7 +8,7 @@ var countDownDate3 = new Date(CAPODANNO).getTime();
 
 var timer1 = document.getElementById("timer1")
 var timer2 = document.getElementById("timer2")
-var timer2 = document.getElementById("timer3")
+var timer3 = document.getElementById("timer3")
 
 function countdown(finish_date, timer) {
 
