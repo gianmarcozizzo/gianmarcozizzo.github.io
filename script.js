@@ -4,7 +4,7 @@ var COMPLEANNO = "Feb 7, 2023 00:00:00"
 var countDownDate1 = new Date(NATALE).getTime();
 var countDownDate2 = new Date(COMPLEANNO).getTime();
 
-var timer1 = document.getElementById("timer")
+var timer1 = document.getElementById("timer1")
 var timer2 = document.getElementById("timer2")
 
 function countdown(finish_date, timer) {
