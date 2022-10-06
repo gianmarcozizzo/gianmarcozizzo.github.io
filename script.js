@@ -1,14 +1,14 @@
-var NATALE = "Dec 25, 2022 00:00:00"
-var COMPLEANNO = "Feb 7, 2023 00:00:00"
-var CAPODANNO = "Jan 1, 2023 00:00:00"
+var NATALE = ["Natale", "Dec 25, 2022 00:00:00"]
+var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"]
+var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
 
-var countDownDate1 = new Date(NATALE).getTime();
-var countDownDate2 = new Date(COMPLEANNO).getTime();
-var countDownDate3 = new Date(CAPODANNO).getTime();
+var countDownDate1 = new Date(NATALE[1]).getTime();
+var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
+var countDownDate3 = new Date(CAPODANNO[1]).getTime();
 
-var timer1 = document.getElementById("timer1")
-var timer2 = document.getElementById("timer2")
-var timer3 = document.getElementById("timer3")
+var Natale = document.getElementById("Natale")
+var Compleanno = document.getElementById("Compleanno")
+var Capodanno = document.getElementById("Capodanno")
 
 function countdown(finish_date, timer) {
 
@@ -33,6 +33,6 @@ function countdown(finish_date, timer) {
     }, 1000);
 }
 
-countdown(countDownDate1, timer1)
-countdown(countDownDate2, timer2)
-countdown(countDownDate3, timer3)
+countdown(countDownDate1, Natale)
+countdown(countDownDate2, Compleanno)
+countdown(countDownDate3, Capodanno)
