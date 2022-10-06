@@ -20,10 +20,10 @@ var Natale = document.getElementById(NATALE[0])
 var Compleanno = document.getElementById(COMPLEANNO[0])
 var Capodanno = document.getElementById(CAPODANNO[0])
 
-var Vincenzo = document.getElementById(COMPLEANNO_VECIENZO[1])
-var Spagnolo = document.getElementById(COMPLEANNO_SPAGNOLO[1])
-var Pedone = document.getElementById(COMPLEANNO_PEDONE[1])
-var Giardino = document.getElementById(COMPLEANNO_GIARDINO[1])
+var Vincenzo = document.getElementById(COMPLEANNO_VECIENZO[0])
+var Spagnolo = document.getElementById(COMPLEANNO_SPAGNOLO[0])
+var Pedone = document.getElementById(COMPLEANNO_PEDONE[0])
+var Giardino = document.getElementById(COMPLEANNO_GIARDINO[0])
 
 function countdown(finish_date, timer) {
 
