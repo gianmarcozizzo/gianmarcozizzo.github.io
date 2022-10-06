@@ -20,7 +20,7 @@ function countdown(finish_date, timer) {
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-        timer.innerHTML = days + "<span style='font-weight:normal'>d</span> " + hours + "h " + minutes + "m " + seconds + "s ";
+        timer.innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
 
         if (distance < 0) {
