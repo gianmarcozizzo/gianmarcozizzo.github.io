@@ -1,5 +1,8 @@
-var countDownDate1 = new Date("Oct 19, 2022 12:25:25").getTime();
-var countDownDate2 = new Date("Nov 19, 2022 12:25:25").getTime();
+var NATALE = "Dec 25, 2022 00:00:00"
+var COMPLEANNO = "Feb 7, 2023 00:00:00"
+
+var countDownDate1 = new Date(NATALE).getTime();
+var countDownDate2 = new Date(COMPLEANNO).getTime();
 
 var timer1 = document.getElementById("timer")
 var timer2 = document.getElementById("timer2")
