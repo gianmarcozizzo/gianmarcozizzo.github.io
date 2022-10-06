@@ -7,8 +7,8 @@ var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
 var countDownDate3 = new Date(CAPODANNO[1]).getTime();
 
 var Natale = document.getElementById(NATALE[0])
-var Compleanno = document.getElementById("Compleanno")
-var Capodanno = document.getElementById("Capodanno")
+var Compleanno = document.getElementById(COMPLEANNO[0])
+var Capodanno = document.getElementById(CAPODANNO[0])
 
 function countdown(finish_date, timer) {
 
