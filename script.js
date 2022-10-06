@@ -1,5 +1,6 @@
 var NATALE = ["Natale", "Dec 25, 2022 00:00:00"]
 var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"]
+var 30_ANNI = ["30_ANNI", "Feb 7, 2025 00:00:00"]
 var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
 var COMPLEANNO_VECIENZO = ["Vincenzo", "Jun 11, 2023 00:00:00"]
 var COMPLEANNO_SPAGNOLO = ["Spagnolo", "May 10, 2023 00:00:00"]
@@ -8,6 +9,7 @@ var COMPLEANNO_GIARDINO = ["Giardino", "May 9, 2023 00: 00: 00"]
 
 var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
+var countDownDate8 = new Date(30_ANNI[1]).getTime();
 var countDownDate3 = new Date(CAPODANNO[1]).getTime();
 
 var countDownDate4 = new Date(COMPLEANNO_VECIENZO[1]).getTime();
@@ -18,6 +20,7 @@ var countDownDate7 = new Date(COMPLEANNO_GIARDINO[1]).getTime();
 
 var Natale = document.getElementById(NATALE[0])
 var Compleanno = document.getElementById(COMPLEANNO[0])
+var 30_anni = document.getElementById(30_ANNI[0])
 var Capodanno = document.getElementById(CAPODANNO[0])
 
 var Vincenzo = document.getElementById(COMPLEANNO_VECIENZO[0])
@@ -50,6 +53,7 @@ function countdown(finish_date, timer) {
 
 countdown(countDownDate1, Natale)
 countdown(countDownDate2, Compleanno)
+countdown(countDownDate8, 30_anni)
 countdown(countDownDate3, Capodanno)
 
 countdown(countDownDate4, Vincenzo)
