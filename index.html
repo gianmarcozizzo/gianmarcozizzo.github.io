@@ -21,7 +21,7 @@
     </div>
 
     <h4> Siamo attualmente al giorno <span id=dayYear></span> su 365 </h4>
-    <h4> Siamo attualmente alla settimana <span id=weekNum></span> su 52 <div id="container"></div></h4>
+    <h4> Siamo attualmente alla settimana <span id=weekNum></span> su 52 <div class="ldBar" data-value="50"></div></h4>
     <h4> Natale: <span id=Natale></span> </h4>
     <h4> Capodanno: <span id=Capodanno></span> </h4>
     <!--
@@ -29,40 +29,6 @@
     <h4> Ho 30 anni tra: <span id=Trentaanni></span> </h4>
     -->
 </body>
-<script>
-    // progressbar.js@1.0.0 version is used
-    // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
 
-    var bar = new ProgressBar.Line(container, {
-        strokeWidth: 4,
-        easing: 'easeInOut',
-        duration: 1400,
-        color: '#f2f2f2',
-        trailColor: '#eee',
-        trailWidth: 1,
-        svgStyle: { width: '100%', height: '100%' },
-        text: {
-            style: {
-                // Text color.
-                // Default: same as stroke color (options.color)
-                color: '#999',
-                position: 'absolute',
-                right: '0',
-                top: '30px',
-                padding: 0,
-                margin: 0,
-                transform: null
-            },
-            autoStyleContainer: false
-        },
-        from: { color: '#FFEA82' },
-        to: { color: '#ED6A5A' },
-        step: (state, bar) => {
-            bar.setText(Math.round(bar.value() * 100) + ' %');
-        }
-    });
-
-    bar.animate(1.0);  // Number from 0.0 to 1.0
-</script>
 <script src="script.js"></script>
 </html>
