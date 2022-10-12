@@ -13,6 +13,7 @@ var Compleanno = document.getElementById(COMPLEANNO[0])
 var Trentaanni = document.getElementById(TRENTAANNI[0])
 var Capodanno = document.getElementById(CAPODANNO[0])
 
+var week_number = document.getElementById(weekNum)
 
 function countdown(finish_date, timer) {
 
@@ -36,21 +37,18 @@ function countdown(finish_date, timer) {
     }, 1000);
 }
 
-countdown(countDownDate1, Natale)
-countdown(countDownDate2, Compleanno)
-countdown(countDownDate8, Trentaanni)
-countdown(countDownDate3, Capodanno)
-
-var week_number = document.getElementById(weekNum)
-
 function week(week_number) {
     currentDate = new Date();
     startDate = new Date(currentDate.getFullYear(), 0, 1);
     var days = Math.floor((currentDate - startDate) / (24 * 60 * 60 * 1000));
     var weekNumber = Math.ceil(days / 7);
-    window.alert(weekNumber);
     week_number.innerHTML = weekNumber;
 }
+
+countdown(countDownDate1, Natale)
+countdown(countDownDate2, Compleanno)
+countdown(countDownDate8, Trentaanni)
+countdown(countDownDate3, Capodanno)
 
 week(week_number)
 // Display the calculated result      
