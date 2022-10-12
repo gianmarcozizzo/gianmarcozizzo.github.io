@@ -47,8 +47,8 @@ function week(week_number) {
     currentDate = new Date();
     startDate = new Date(currentDate.getFullYear(), 0, 1);
     var days = Math.floor((currentDate - startDate) / (24 * 60 * 60 * 1000));
-
     var weekNumber = Math.ceil(days / 7);
+    window.alert(weekNumber);
     week_number.innerHTML = weekNumber;
 }
 
