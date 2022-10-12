@@ -13,6 +13,7 @@ var Compleanno = document.getElementById(COMPLEANNO[0])
 var Trentaanni = document.getElementById(TRENTAANNI[0])
 var Capodanno = document.getElementById(CAPODANNO[0])
 
+var day_of_the_year = document.getElementById("dayYear")
 var week_number = document.getElementById("weekNum")
 
 function countdown(finish_date, timer) {
@@ -37,6 +38,15 @@ function countdown(finish_date, timer) {
     }, 1000);
 }
 
+function day_year(day_of_the_year) {
+    var now = new Date();
+    var start = new Date(now.getFullYear(), 0, 0);
+    var diff = (now - start) + ((start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000);
+    var oneDay = 1000 * 60 * 60 * 24;
+    var day = Math.floor(diff / oneDay);
+    day_of_the_year.innerHTML = day;
+}
+
 function week(week_number) {
     currentDate = new Date();
     startDate = new Date(currentDate.getFullYear(), 0, 1);
@@ -45,12 +55,12 @@ function week(week_number) {
     week_number.innerHTML = weekNumber;
 }
 
-countdown(countDownDate1, Natale)
-countdown(countDownDate2, Compleanno)
-countdown(countDownDate8, Trentaanni)
-countdown(countDownDate3, Capodanno)
+day(day_of_the_year)
 
 week(week_number)
-// Display the calculated result      
-// document.write("Week number of " + currentDate +
-//   " is :   " + weekNumber);
+
+countdown(countDownDate1, Natale)
+//countdown(countDownDate2, Compleanno)
+// countdown(countDownDate8, Trentaanni)
+countdown(countDownDate3, Capodanno)
+
