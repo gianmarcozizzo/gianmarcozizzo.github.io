@@ -31,6 +31,7 @@
     <div class="center" id="myItem1"></div>
     <h4> Natale: <span id=Natale></span> </h4>
     <h4> Capodanno: <span id=Capodanno></span> </h4>
+    <p id=test>test</p>
     <!--
     <h4> 7 Febbraio: <span id=Compleanno></span> </h4>
     <h4> Ho 30 anni tra: <span id=Trentaanni></span> </h4>
@@ -43,7 +44,8 @@
     var bar2 = document.getElementById('myItem1').ldBar;
     var actual = document.getElementById("weekNum").textContent;
     var percentage = Math.ceil((actual * 100) / 52);
-    bar2.set(percentage);
+    document.getElementById("test").innerHTML = percentage;
+    bar2.set(69);
 </script>
 <script src="script.js"></script>
 
