@@ -55,7 +55,7 @@ function week(week_number) {
     week_number.innerHTML = weekNumber;
 }
 
-day(day_of_the_year)
+day_year(day_of_the_year)
 
 week(week_number)
 
