@@ -41,7 +41,8 @@
     var bar1 = new ldBar("#myItem1");
     /* ldBar stored in the element */
     var bar2 = document.getElementById('myItem1').ldBar;
-    bar2.set(60);
+    var percentage = Math.ceil((41 * 100)/52)
+    bar2.set(percentage);
 </script>
 <script src="script.js"></script>
 
