@@ -49,7 +49,7 @@ function week(weekNumber) {
     var days = Math.floor((currentDate - startDate) / (24 * 60 * 60 * 1000));
 
     var weekNumber = Math.ceil(days / 7);
-    return weekNumber;
+    weekNumber.innerHTML = weekNumber;
 }
 
 week(weekNumb)
