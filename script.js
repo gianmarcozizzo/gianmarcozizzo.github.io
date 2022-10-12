@@ -13,7 +13,7 @@ var Compleanno = document.getElementById(COMPLEANNO[0])
 var Trentaanni = document.getElementById(TRENTAANNI[0])
 var Capodanno = document.getElementById(CAPODANNO[0])
 
-var week_number = document.getElementById(weekNum)
+var week_number = document.getElementById("weekNum")
 
 function countdown(finish_date, timer) {
 
