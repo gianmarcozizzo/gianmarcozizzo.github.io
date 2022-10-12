@@ -41,18 +41,18 @@ countdown(countDownDate2, Compleanno)
 countdown(countDownDate8, Trentaanni)
 countdown(countDownDate3, Capodanno)
 
-var weekNumb = document.getElementById(weekNum)
+var week_number = document.getElementById(weekNum)
 
-function week(weekNumber) {
+function week(week_number) {
     currentDate = new Date();
     startDate = new Date(currentDate.getFullYear(), 0, 1);
     var days = Math.floor((currentDate - startDate) / (24 * 60 * 60 * 1000));
 
     var weekNumber = Math.ceil(days / 7);
-    weekNumber.innerHTML = weekNumber;
+    week_number.innerHTML = weekNumber;
 }
 
-week(weekNumb)
+week(week_number)
 // Display the calculated result      
 // document.write("Week number of " + currentDate +
 //   " is :   " + weekNumber);
