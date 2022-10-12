@@ -33,6 +33,7 @@
     <h4> Capodanno: <span id=Capodanno></span> </h4>
     <p id=test1>test</p>
     <p id=test2>test</p>
+    <p id=test3>test</p>
     <!--
     <h4> 7 Febbraio: <span id=Compleanno></span> </h4>
     <h4> Ho 30 anni tra: <span id=Trentaanni></span> </h4>
@@ -44,10 +45,11 @@
     /* ldBar stored in the element */
     var bar2 = document.getElementById('myItem1').ldBar;
     var actual = document.getElementById("weekNum").textContent;
+    document.getElementById("test2").innerHTML = 100*52;
     document.getElementById("test2").innerHTML = actual;
     var percentage = Math.ceil((actual * 100) / 52);
     document.getElementById("test1").innerHTML = percentage;
-    bar2.set(70);
+    bar2.set(71);
 </script>
 <script src="script.js"></script>
 
