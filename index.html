@@ -23,7 +23,7 @@
     </div>
 
     <h4> Siamo attualmente al giorno <span id=dayYear></span> su 365 </h4>
-    <h4> Siamo attualmente alla settimana <span id=weekNum></span> su 52 </h4> <div class="ldBar" data-value="50"></div>
+    <h4> Siamo attualmente alla settimana <span id=weekNum></span> su 52 </h4> <div id="myItem1"></div>
     <h4> Natale: <span id=Natale></span> </h4>
     <h4> Capodanno: <span id=Capodanno></span> </h4>
     <!--
@@ -31,5 +31,12 @@
     <h4> Ho 30 anni tra: <span id=Trentaanni></span> </h4>
     -->
 </body>
+<script>
+    /* construct manually */
+    var bar1 = new ldBar("#myItem1");
+    /* ldBar stored in the element */
+    var bar2 = document.getElementById('myItem1').ldBar;
+    bar1.set(60);
+</script>
 <script src="script.js"></script>
 </html>
