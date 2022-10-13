@@ -32,7 +32,7 @@
 
 .ldBar path.baseline {
     stroke-width: 14;
-    stroke: ##be4d25;
+    stroke: #be4d25;
     stroke-linecap: round;
     filter: url(#custom-shadow);
 }
