@@ -10,9 +10,9 @@
         text-shadow: 0 0 3px #fff;
     }
 .ldBar-label {
-    color: #09f;
+    color: #be4d25;
     font-family: 'varela round';
-    font-size: 0.8em;
+    font-size: 0.7em;
     font-weight: 900;
 }
 .ldBar-label:after {
