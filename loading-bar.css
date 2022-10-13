@@ -1,7 +1,5 @@
 .ldBar {
     position: relative;
-    stroke: #be4d25;
-    stroke-width: 10;
 }
     .ldBar.label-center > .ldBar-label {
         position: absolute;
@@ -10,6 +8,8 @@
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-shadow: 0 0 3px #fff;
+        stroke: #be4d25;
+        stroke-width: 10;
     }
 .ldBar-label:after {
   content: "%";
