@@ -1,5 +1,7 @@
 .ldBar {
-  position: relative;
+    position: relative;
+    stroke: red;
+    stroke-width: 10;
 }
     .ldBar.label-center > .ldBar-label {
         position: absolute;
@@ -15,21 +17,4 @@
 }
 .ldBar.no-percent .ldBar-label:after {
   content: "";
-}
-.ldBar path.mainline {
-    stroke-width: 10;
-    stroke: #09f;
-    stroke-linecap: round;
-}
-
-.ldBar path.baseline {
-    stroke-width: 14;
-    stroke: #f1f2f3;
-    stroke-linecap: round;
-    filter: url(#custom-shadow);
-}
-
-.bar-style {
-    stroke: red;
-    stroke-width: 10;
 }
