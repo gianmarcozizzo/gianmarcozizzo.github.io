@@ -1,6 +1,6 @@
 .ldBar {
     position: relative;
-    stroke: red;
+    stroke: #be4d25;
     stroke-width: 10;
 }
     .ldBar.label-center > .ldBar-label {
