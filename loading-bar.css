@@ -8,8 +8,6 @@
         -webkit-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
         text-shadow: 0 0 3px #fff;
-        stroke: #be4d25;
-        stroke-width: 10;
     }
 .ldBar-label {
     color: #09f;
@@ -24,4 +22,17 @@
 
 .ldBar.no-percent .ldBar-label:after {
   content: "";
+}
+
+.ldBar path.mainline {
+    stroke-width: 10;
+    stroke: #09f;
+    stroke-linecap: round;
+}
+
+.ldBar path.baseline {
+    stroke-width: 14;
+    stroke: #f1f2f3;
+    stroke-linecap: round;
+    filter: url(#custom-shadow);
 }
