@@ -10,7 +10,7 @@
         text-shadow: 0 0 3px #fff;
     }
 .ldBar-label {
-    color: #be4d25;
+    color: #04AA6D;
     font-family: 'varela round';
     font-size: 0.7em;
     font-weight: 900;
@@ -26,13 +26,13 @@
 
 .ldBar path.mainline {
     stroke-width: 10;
-    stroke: #be4d25;
+    stroke: #04AA6D;
     stroke-linecap: round;
 }
 
 .ldBar path.baseline {
     stroke-width: 10;
-    stroke: #be4d25;
+    stroke: #04AA6D;
     stroke-linecap: round;
     filter: url(#custom-shadow);
 }
