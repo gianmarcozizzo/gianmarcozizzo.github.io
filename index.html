@@ -27,8 +27,9 @@
     </div>
 
     <h4> Siamo attualmente al giorno <span id=dayYear></span> su 365 </h4>
+    <div data-preset="circle" class="content ldBar label-center" style="width:100%;height:45px" , id="dayBar"></div>
     <h4> Siamo attualmente alla settimana <span id=weekNum></span> su 52 </h4>
-    <div data-preset="circle" class="content ldBar label-center" style="width:100%;height:45px", id="myItem1"></div>
+    <div data-preset="circle" class="content ldBar label-center" style="width:100%;height:45px" , id="weekBar"></div>
     <h4> Natale: <span id=Natale></span> </h4>
     <h4> Capodanno: <span id=Capodanno></span> </h4>
     <!--
@@ -39,11 +40,20 @@
 <script src="script.js"></script>
 <script>
     /* construct manually */
-    var bar1 = new ldBar("#myItem1");
+    var bar1 = new ldBar("#dayBar");
     /* ldBar stored in the element */
-    var bar2 = document.getElementById('myItem1').ldBar;
+    var bar2 = document.getElementById('dayBar').ldBar;
+    var actual = document.getElementById("dayYear").textContent;
+    var percentage = Math.ceil((actual * 100) / 365);
+    bar2.set(percentage);
+</script>
+<script>
+    /* construct manually */
+    var bar3 = new ldBar("#weekBar");
+    /* ldBar stored in the element */
+    var bar4 = document.getElementById('weekBar').ldBar;
     var actual = document.getElementById("weekNum").textContent;
     var percentage = Math.ceil((actual * 100) / 52);
-    bar2.set(percentage);
+    bar4.set(percentage);
 </script>
 </html>
