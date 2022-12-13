@@ -31,6 +31,10 @@
     <div data-preset="circle" class="content ldBar label-center" style="width:100%;height:45px" , id="dayBar"></div>
     <br />
     <hr style="background-color:#04AA6D">
+    <h4> Siamo attualmente alla settimana <span id=weekNum></span> su 52 </h4>
+    <div data-preset="circle" class="content ldBar label-center" style="width:100%;height:45px" , id="weekBar"></div>
+    <br />
+    <hr style="background-color:#04AA6D">
     <h4> Dependable Distributed Systems (gennaio): <span id=Ddsg></span> </h4>
     <h4> Dependable Distributed Systems (febbraio): <span id=Ddsf></span> </h4>
     <h4> Dependable Distributed Systems: <span id=Dds></span> </h4>
@@ -48,5 +52,14 @@
     var actual = document.getElementById("dayYear").textContent;
     var percentage = Math.ceil((actual * 100) / 365);
     bar2.set(percentage);
+</script>
+<script>
+    /* construct manually */
+    var bar3 = new ldBar("#weekBar");
+    /* ldBar stored in the element */
+    var bar4 = document.getElementById('weekBar').ldBar;
+    var actual = document.getElementById("weekNum").textContent;
+    var percentage = Math.ceil((actual * 100) / 52);
+    bar4.set(percentage);
 </script>
 
