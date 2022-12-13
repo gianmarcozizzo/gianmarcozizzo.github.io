@@ -3,8 +3,8 @@ var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"]
 var TRENTAANNI = ["Trentaanni", "Feb 7, 2025 00:00:00"]
 var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
 
-var DDS1 = ["Dds1", "Jan 24, 2023 00:00:00"]
-var DDS2 = ["Dds2", "Feb 14, 2023 00:00:00"]
+var DDSG = ["Ddsg", "Jan 24, 2023 00:00:00"]
+var DDSF = ["Ddsf", "Feb 14, 2023 00:00:00"]
 
 var AIMLG = ["Aimlg", "Jan 10, 2023 00:00:00"]
 
@@ -13,8 +13,8 @@ var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
 var countDownDate8 = new Date(TRENTAANNI[1]).getTime();
 var countDownDate3 = new Date(CAPODANNO[1]).getTime();
 
-var countDDS1 = new Date(DDS1[1]).getTime();
-var countDDS2 = new Date(DDS2[1]).getTime();
+var countDDSG = new Date(DDSG[1]).getTime();
+var countDDSF = new Date(DDSF[1]).getTime();
 
 var countAIMLG = new Date(AIMLG[1]).getTime();
 
@@ -23,8 +23,8 @@ var Compleanno = document.getElementById(COMPLEANNO[0])
 var Trentaanni = document.getElementById(TRENTAANNI[0])
 var Capodanno = document.getElementById(CAPODANNO[0])
 
-var Dds1 = document.getElementById(DDS1[0])
-var Dds2 = document.getElementById(DDS2[0])
+var Ddsg = document.getElementById(DDSG[0])
+var Ddsf = document.getElementById(DDSF[0])
 
 var Aimlg = document.getElementById(AIMLG[0])
 
@@ -78,7 +78,7 @@ countdown(countDownDate1, Natale)
 //countdown(countDownDate2, Compleanno)
 // countdown(countDownDate8, Trentaanni)
 countdown(countDownDate3, Capodanno)
-countdown(countDDS1, Dds1)
-countdown(countDDS2, Dds2)
+countdown(countDDSG, Ddsg)
+countdown(countDDSF, Ddsf)
 countdown(countAIMLG, Aimlg)
 
