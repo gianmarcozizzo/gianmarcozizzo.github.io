@@ -3,7 +3,7 @@ var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"]
 var TRENTAANNI = ["Trentaanni", "Feb 7, 2025 00:00:00"]
 var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
 
-var DDS = ["DependableDistributedSystems", "Jan 24, 2023 00:00:00"]
+var DDS = ["Dds", "Jan 24, 2023 00:00:00"]
 
 var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
