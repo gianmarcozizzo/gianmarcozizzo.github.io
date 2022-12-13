@@ -3,15 +3,21 @@ var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"]
 var TRENTAANNI = ["Trentaanni", "Feb 7, 2025 00:00:00"]
 var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
 
+var DDS = ["DependableDistributedSystems", "Jan 24, 2023 00:00:00"]
+
 var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
 var countDownDate8 = new Date(TRENTAANNI[1]).getTime();
 var countDownDate3 = new Date(CAPODANNO[1]).getTime();
 
+var countDDS = new Date(DDS[1]).getTime();
+
 var Natale = document.getElementById(NATALE[0])
 var Compleanno = document.getElementById(COMPLEANNO[0])
 var Trentaanni = document.getElementById(TRENTAANNI[0])
 var Capodanno = document.getElementById(CAPODANNO[0])
+
+var Dds = document.getElementById(DDS[0])
 
 var day_of_the_year = document.getElementById("dayYear")
 var week_number = document.getElementById("weekNum")
@@ -63,6 +69,6 @@ countdown(countDownDate1, Natale)
 //countdown(countDownDate2, Compleanno)
 // countdown(countDownDate8, Trentaanni)
 countdown(countDownDate3, Capodanno)
-
+countdown(countDDS, Dds)
 
 
