@@ -49,13 +49,4 @@
     var percentage = Math.ceil((actual * 100) / 365);
     bar2.set(percentage);
 </script>
-<script>
-    /* construct manually */
-    var bar3 = new ldBar("#weekBar");
-    /* ldBar stored in the element */
-    var bar4 = document.getElementById('weekBar').ldBar;
-    var actual = document.getElementById("weekNum").textContent;
-    var percentage = Math.ceil((actual * 100) / 52);
-    bar4.set(percentage);
-</script>
 
