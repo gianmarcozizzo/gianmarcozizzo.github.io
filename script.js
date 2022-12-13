@@ -6,7 +6,7 @@ var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
 var DDS1 = ["Dds1", "Jan 24, 2023 00:00:00"]
 var DDS2 = ["Dds2", "Feb 14, 2023 00:00:00"]
 
-var AIML1 = ["Aiml1", "Jan 10, 2023 00:00:00"]
+var AIMLG = ["Aiml1", "Jan 10, 2023 00:00:00"]
 
 var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
@@ -16,7 +16,7 @@ var countDownDate3 = new Date(CAPODANNO[1]).getTime();
 var countDDS1 = new Date(DDS1[1]).getTime();
 var countDDS2 = new Date(DDS2[1]).getTime();
 
-var countAIML1 = new Date(AIML1[1]).getTime();
+var countAIMLG = new Date(AIMLG[1]).getTime();
 
 var Natale = document.getElementById(NATALE[0])
 var Compleanno = document.getElementById(COMPLEANNO[0])
@@ -26,7 +26,7 @@ var Capodanno = document.getElementById(CAPODANNO[0])
 var Dds1 = document.getElementById(DDS1[0])
 var Dds2 = document.getElementById(DDS2[0])
 
-var Aiml1 = document.getElementById(AIML1[0])
+var Aimlg = document.getElementById(AIMLG[0])
 
 var day_of_the_year = document.getElementById("dayYear")
 var week_number = document.getElementById("weekNum")
@@ -80,5 +80,5 @@ countdown(countDownDate1, Natale)
 countdown(countDownDate3, Capodanno)
 countdown(countDDS1, Dds1)
 countdown(countDDS2, Dds2)
-countdown(countAIML1, Aiml1)
+countdown(countAIMLG, Aimlg)
 
