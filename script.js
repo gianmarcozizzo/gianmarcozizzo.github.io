@@ -1,4 +1,4 @@
-var NATALE = ["Natale", "Dec 25, 2022 00:00:00"]
+var NATALE = ["Natale", "Dec 24, 2022 00:00:00"]
 var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"]
 var TRENTAANNI = ["Trentaanni", "Feb 7, 2025 00:00:00"]
 var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
