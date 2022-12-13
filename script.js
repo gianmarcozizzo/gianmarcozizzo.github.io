@@ -8,15 +8,15 @@ var DDSF = ["Ddsf", "Feb 14, 2023 00:00:00"]
 
 var AIMLG = ["Aimlg", "Jan 10, 2023 00:00:00"]
 
-var countDownDate1 = new Date(NATALE[1]).getTime();
-var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
-var countDownDate8 = new Date(TRENTAANNI[1]).getTime();
-var countDownDate3 = new Date(CAPODANNO[1]).getTime();
+var countDownDate1 = new Date(NATALE[1]).getTime()
+var countDownDate2 = new Date(COMPLEANNO[1]).getTime()
+var countDownDate8 = new Date(TRENTAANNI[1]).getTime()
+var countDownDate3 = new Date(CAPODANNO[1]).getTime()
 
-var countDDSG = new Date(DDSG[1]).getTime();
-var countDDSF = new Date(DDSF[1]).getTime();
+var countDDSG = new Date(DDSG[1]).getTime()
+var countDDSF = new Date(DDSF[1]).getTime()
 
-var countAIMLG = new Date(AIMLG[1]).getTime();
+var countAIMLG = new Date(AIMLG[1]).getTime()
 
 var Natale = document.getElementById(NATALE[0])
 var Compleanno = document.getElementById(COMPLEANNO[0])
