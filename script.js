@@ -6,7 +6,7 @@ var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
 var DDS1 = ["Dds1", "Jan 24, 2023 00:00:00"]
 var DDS2 = ["Dds2", "Feb 14, 2023 00:00:00"]
 
-var AIMLG = ["Aiml1", "Jan 10, 2023 00:00:00"]
+var AIMLG = ["Aimlg", "Jan 10, 2023 00:00:00"]
 
 var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
