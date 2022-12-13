@@ -1,38 +1,38 @@
-var NATALE = ["Natale", "Dec 25, 2022 00:00:00"]
-var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"]
-var TRENTAANNI = ["Trentaanni", "Feb 7, 2025 00:00:00"]
-var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"]
+var NATALE = ["Natale", "Dec 25, 2022 00:00:00"];
+var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"];
+var TRENTAANNI = ["Trentaanni", "Feb 7, 2025 00:00:00"];
+var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"];
 
-var DDS = ["Dds", "Jan 24, 2023 00:00:00"]
+var DDS = ["Dds", "Jan 24, 2023 00:00:00"];
 
-var DDSG = ["Ddsg", "Jan 24, 2023 00:00:00"]
-var DDSF = ["Ddsf", "Feb 14, 2023 00:00:00"]
+var DDSG = ["Ddsg", "Jan 24, 2023 00:00:00"];
+var DDSF = ["Ddsf", "Feb 14, 2023 00:00:00"];
 
-var AIMLG = ["Aimlg", "Jan 10, 2023 00:00:00"]
+var AIMLG = ["Aimlg", "Jan 10, 2023 00:00:00"];
 
-var countDownDate1 = new Date(NATALE[1]).getTime()
-var countDownDate2 = new Date(COMPLEANNO[1]).getTime()
-var countDownDate8 = new Date(TRENTAANNI[1]).getTime()
-var countDownDate3 = new Date(CAPODANNO[1]).getTime()
-var countDownDateDDS = new Date(DDS[1]).getTime()
-var countDDSG = new Date(DDSG[1]).getTime()
-var countDDSF = new Date(DDSF[1]).getTime()
+var countDownDate1 = new Date(NATALE[1]).getTime();
+var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
+var countDownDate8 = new Date(TRENTAANNI[1]).getTime();
+var countDownDate3 = new Date(CAPODANNO[1]).getTime();
+var countDownDateDDS = new Date(DDS[1]).getTime();
+var countDDSG = new Date(DDSG[1]).getTime();
+var countDDSF = new Date(DDSF[1]).getTime();
 
-var countAIMLG = new Date(AIMLG[1]).getTime()
+var countAIMLG = new Date(AIMLG[1]).getTime();
 
-var Natale = document.getElementById(NATALE[0])
-var Compleanno = document.getElementById(COMPLEANNO[0])
-var Trentaanni = document.getElementById(TRENTAANNI[0])
-var Capodanno = document.getElementById(CAPODANNO[0])
+var Natale = document.getElementById(NATALE[0]);
+var Compleanno = document.getElementById(COMPLEANNO[0]);
+var Trentaanni = document.getElementById(TRENTAANNI[0]);
+var Capodanno = document.getElementById(CAPODANNO[0]);
 
-var Dds = document.getElementById(DDS[0])
-var Ddsg = document.getElementById(DDSG[0])
-var Ddsf = document.getElementById(DDSF[0])
+var Dds = document.getElementById(DDS[0]);
+var Ddsg = document.getElementById(DDSG[0]);
+var Ddsf = document.getElementById(DDSF[0]);
 
-var Aimlg = document.getElementById(AIMLG[0])
+var Aimlg = document.getElementById(AIMLG[0]);
 
-var day_of_the_year = document.getElementById("dayYear")
-var week_number = document.getElementById("weekNum")
+var day_of_the_year = document.getElementById("dayYear");
+var week_number = document.getElementById("weekNum");
 
 function countdown(finish_date, timer) {
 
@@ -73,16 +73,16 @@ function week(week_number) {
     week_number.innerHTML = weekNumber;
 }
 
-day_year(day_of_the_year)
+day_year(day_of_the_year);
 
-week(week_number)
+week(week_number);
 
-countdown(countDownDate1, Natale)
+countdown(countDownDate1, Natale);
 //countdown(countDownDate2, Compleanno)
 // countdown(countDownDate8, Trentaanni)
-countdown(countDownDate3, Capodanno)
-countdown(countDDSG, Ddsg)
-countdown(countDDSF, Ddsf)
-countdown(countAIMLG, Aimlg)
-countdown(countDownDateDDS, Dds)
+countdown(countDownDate3, Capodanno);
+countdown(countDDSG, Ddsg);
+countdown(countDDSF, Ddsf);
+countdown(countAIMLG, Aimlg);
+countdown(countDownDateDDS, Dds);
 
