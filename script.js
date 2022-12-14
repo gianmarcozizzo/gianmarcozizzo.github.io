@@ -3,8 +3,6 @@ var COMPLEANNO = ["Compleanno", "Feb 7, 2023 00:00:00"];
 var TRENTAANNI = ["Trentaanni", "Feb 7, 2025 00:00:00"];
 var CAPODANNO = ["Capodanno", "Jan 1, 2023 00:00:00"];
 
-var DDS = ["Dds", "Jan 24, 2023 00:00:00"];
-
 var DDSG = ["Ddsg", "Jan 24, 2023 00:00:00"];
 var DDSF = ["Ddsf", "Feb 14, 2023 00:00:00"];
 
@@ -14,7 +12,7 @@ var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
 var countDownDate8 = new Date(TRENTAANNI[1]).getTime();
 var countDownDate3 = new Date(CAPODANNO[1]).getTime();
-var countDownDateDDS = new Date(DDS[1]).getTime();
+
 var countDDSG = new Date(DDSG[1]).getTime();
 var countDDSF = new Date(DDSF[1]).getTime();
 
@@ -25,7 +23,6 @@ var Compleanno = document.getElementById(COMPLEANNO[0]);
 var Trentaanni = document.getElementById(TRENTAANNI[0]);
 var Capodanno = document.getElementById(CAPODANNO[0]);
 
-var Dds = document.getElementById(DDS[0]);
 var Ddsg = document.getElementById(DDSG[0]);
 var Ddsf = document.getElementById(DDSF[0]);
 
@@ -84,5 +81,4 @@ countdown(countDownDate3, Capodanno);
 countdown(countDDSG, Ddsg);
 countdown(countDDSF, Ddsf);
 countdown(countAIMLG, Aimlg);
-countdown(countDownDateDDS, Dds);
 
