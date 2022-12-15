@@ -9,6 +9,9 @@ var DDSF = ["Ddsf", "Feb 14, 2023 00:00:00"];
 var AIMLG = ["Aimlg", "Jan 10, 2023 00:00:00"];
 var AIMLF = ["Aimlf", "Jan 31, 2023 00:00:00"];
 
+var DMG = ["Dmg", "Jan 25, 2023 00:00:00"];
+var DMF = ["Dmf", "Feb 15, 2023 00:00:00"];
+
 var countDownDate1 = new Date(NATALE[1]).getTime();
 var countDownDate2 = new Date(COMPLEANNO[1]).getTime();
 var countDownDate8 = new Date(TRENTAANNI[1]).getTime();
@@ -20,6 +23,9 @@ var countDDSF = new Date(DDSF[1]).getTime();
 var countAIMLG = new Date(AIMLG[1]).getTime();
 var countAIMLF = new Date(AIMLF[1]).getTime();
 
+var countDMG = new Date(DMG[1]).getTime();
+var countDMF = new Date(DMF[1]).getTime();
+
 var Natale = document.getElementById(NATALE[0]);
 var Compleanno = document.getElementById(COMPLEANNO[0]);
 var Trentaanni = document.getElementById(TRENTAANNI[0]);
@@ -30,6 +36,9 @@ var Ddsf = document.getElementById(DDSF[0]);
 
 var Aimlg = document.getElementById(AIMLG[0]);
 var Aimlf = document.getElementById(AIMLF[0]);
+
+var Dmg = document.getElementById(DMG[0]);
+var Dmf = document.getElementById(DMF[0]);
 
 var day_of_the_year = document.getElementById("dayYear");
 var week_number = document.getElementById("weekNum");
@@ -85,3 +94,5 @@ countdown(countDDSG, Ddsg);
 countdown(countDDSF, Ddsf);
 countdown(countAIMLG, Aimlg);
 countdown(countAIMLF, Aimlf);
+countdown(countDMG, Dmg);
+countdown(countDMF, Dmf);
